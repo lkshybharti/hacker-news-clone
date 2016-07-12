@@ -1,0 +1,35 @@
+{
+  "name": "hacker-news-app",
+  "version": "0.5.0",
+  "description": "hacker news app",
+  "main": "index.js",
+  "repository": "https://lakshaybharti@bitbucket.org/rohan2602/ikshyassignment.git",
+  "scripts": {
+    "dev": "npm run clear-build && webpack-dev-server --config ./webpack.config.dev.js",
+    "dev-c9": "npm run dev -- --host $IP --port $PORT",
+    "build": "webpack --config ./webpack.config.prod.js -p --compress",
+    "clear-build": "rm -r ./public/js/* || true"
+  },
+  "author": "Lakshay Bharti",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "axios": "^0.12.0",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-stage-1": "^6.1.18",
+    "react": "^15.2.0",
+    "react-dom": "^15.2.0",
+    "react-redux": "^4.4.5",
+    "react-timeago": "^3.1.1",
+    "redux": "^3.5.2",
+    "redux-promise": "^0.5.3",
+    "redux-saga": "^0.10.5"
+  }
+}

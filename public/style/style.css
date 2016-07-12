@@ -1,0 +1,9 @@
+body {
+  padding-top: 5rem;
+}
+.navbar {
+  background-color: #e69827;
+}
+.small-loader {
+   width: 60px;
+}

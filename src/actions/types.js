@@ -1,0 +1,2 @@
+export const FETCH_NEWS_SAGA = 'FETCH_NEWS_SAGA'
+export const NEWS_LOADED = 'NEWS_LOADED'
